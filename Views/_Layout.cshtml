@@ -1,0 +1,52 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar-background">
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <h1 class="logo">
+             @Model.Value("logoName")
+          </h1>
+        </div>
+        <nav class="nav-items">
+          <h4 class="nav-links">Home</h4>
+          <h4 class="nav-links">Contacts</h4>
+        </nav>
+        <div class="navbar-right">
+          <div class="shop-icon-circle">
+            <iconify-icon icon="clarity:shopping-bag-line"></iconify-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    @RenderBody()
+
+    <!-- End of navbar -->
+
+   
+
+    <!-- End of Showcase Two -->
+
+    <!-- Footer -->
+
+    <!-- End of Footer -->
+  </body>
+</html>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+

@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-seri;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Buttons */
+.std-button-one {
+    background-color: #ff737394;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    outline: none;
+    border: none;
+    width: 188px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.std-button-one:hover {
+    font-size: 1.1rem;
+    background-color: #ff7373;
+}
+/* End of Buttons */
+
+/* Navbar */
+
+.navbar-background {
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  height: 15%;
+}
+
+.navbar-left {
+width: 10%;
+text-align: left;
+}
+.navbar-right {
+width: 10%;
+text-align: right;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  color: #222529;
+
+}
+
+.logo {
+  color: #222529;
+  font-size: 2rem;
+}
+
+.shop-icon-circle {
+  float: right;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-links {
+  font-weight: 500;
+  color: #222529;
+}
+
+.nav-links:hover {
+  color: #ff7373;
+  cursor: pointer;
+}
+
+/* End of navbar */
+
+/* Section One */
+.homeView-background {
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+  
+  .homeView-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+  
+  .homeview-text-container {
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+  }
+
+  .section-one-subheader {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+
+  .section-one-header {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  img {
+    width: 30%;
+    object-fit:cover;
+  }
+
+
+/* End of Section One */
+
+/* Showcase Two */
+.featured-product-container {
+    height: 750px;
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+
+  .feature-card-img-container {
+    width: 100%;
+    height: 210px;
+    background: rgb(214, 207, 207);
+    position: relative;
+    overflow: hidden;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .quick-view {
+    width: 100%;
+    font-weight: 100;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+  }
+
+  .quick-view:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+  }
+
+  .card-icons:hover {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+  }
+  .card-icons {
+    position: absolute;
+    top: 5%;
+    right: -50px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .feature-product-cards-container {
+    display: grid;
+    /* justify-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+  }
+  .feature-product-title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+.feature-card-container {
+  height: 320px;
+  width: 255px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+  }
+.display-prices {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .display-price {
+    margin-right: 0.5rem;
+  }
+
+.feature-card-text-container {
+    text-align: center;
+  }
+  
+  .display-price {
+    color: #23262a;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .product-name {
+    color: #23262a;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .category-name {
+    font-size: 0.8rem;
+    color: #616365;
+    font-weight: 500;
+    margin-top: 3%;
+  }
+
+/* End of showcase Two */

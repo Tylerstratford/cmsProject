@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+
+
+    <div class="homeView-background">
+      <div class="homeView-container">
+        <img
+          src="@Model.Value("ShowcaseOneleftImage")"
+        />
+        <div class="homeview-text-container">
+          <div>
+            <h1 class="section-one-header">
+            @Model.Value("ShowcaseOneheader") </br>
+            @Model.Value("ShowcaseOnesecondHeader")
+            </h1>
+            <h4 class="section-one-subheader">
+              @Model.Value("ShowcaseOnesubHeader")
+            </h4>
+            <button class="std-button-one">@Model.Value("shopText")</button>
+          </div>
+        </div>
+        <img
+          src="@Model.Value("ShowcaseOnerightImage")"
+        />
+      </div>
+    </div>

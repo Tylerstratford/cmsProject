@@ -1,0 +1,108 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    ViewData["Title"] = @Model.Value("homeTitle");
+	Layout = "_Layout.cshtml";
+}
+
+ <!-- Showcase One -->
+ 
+@await Html.PartialAsync("ShowcaseOne")
+
+
+    <!-- End of Showcase One -->
+
+    <!-- Showcase Two -->
+    <div class="featured-product-container">
+      <h1 class="feature-product-title">Featured Dresses</h1>
+      <div class="feature-product-cards-container">
+        <!-- Card -->
+        <!-- Loop to be inserted -->
+        <div class="feature-card-container">
+          <div>
+            <div class="feature-card-img-container">
+              <img
+                class="img"
+                src="https://img.freepik.com/premium-photo/elegant-empty-perfume-bottle-still-life_23-2149234369.jpg?w=740"
+              />
+              <button class="std-button-one quick-view">Quick View</button>
+              <!-- Need to fix icons -->
+              <CardIcons class="card-icons" />
+            </div>
+            <div class="feature-card-text-container">
+              <p class="category-name">Category</p>
+              <h2 class="product-name">Modern Black Dress</h2>
+              <div class="display-prices">
+                <h3 class="display-price">$35.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-container">
+          <div>
+            <div class="feature-card-img-container">
+              <img
+                class="img"
+                src="https://img.freepik.com/premium-photo/elegant-empty-perfume-bottle-still-life_23-2149234369.jpg?w=740"
+              />
+              <button class="std-button-one quick-view">Quick View</button>
+              <!-- Need to fix icons -->
+              <CardIcons class="card-icons" />
+            </div>
+            <div class="feature-card-text-container">
+              <p class="category-name">Category</p>
+              <h2 class="product-name">Modern Black Dress</h2>
+              <div class="display-prices">
+                <h3 class="display-price">$35.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-container">
+          <div>
+            <div class="feature-card-img-container">
+              <img
+                class="img"
+                src="https://img.freepik.com/premium-photo/elegant-empty-perfume-bottle-still-life_23-2149234369.jpg?w=740"
+              />
+              <button class="std-button-one quick-view">Quick View</button>
+              <!-- Need to fix icons -->
+              <CardIcons class="card-icons" />
+            </div>
+            <div class="feature-card-text-container">
+              <p class="category-name">Category</p>
+              <h2 class="product-name">Modern Black Dress</h2>
+              <div class="display-prices">
+                <h3 class="display-price">$35.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-container">
+          <div>
+            <div class="feature-card-img-container">
+              <img
+                class="img"
+                src="https://img.freepik.com/premium-photo/elegant-empty-perfume-bottle-still-life_23-2149234369.jpg?w=740"
+              />
+              <button class="std-button-one quick-view">Quick View</button>
+              <!-- Need to fix icons -->
+              <CardIcons class="card-icons" />
+            </div>
+            <div class="feature-card-text-container">
+              <p class="category-name">Category</p>
+              <h2 class="product-name">Modern Black Dress</h2>
+              <div class="display-prices">
+                <h3 class="display-price">$35.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of Card -->
+      </div>
+    </div>
