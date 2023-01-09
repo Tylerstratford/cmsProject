@@ -3,4 +3,27 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
 	Layout = "_Layout.cshtml";
+	ViewData["Title"] = @Model.Value("contactPageName");
 }
+
+
+
+    <div class="container">
+      @await Html.PartialAsync("Breadcrumb")
+    </div>
+    <div class="google-maps">
+        <iframe class="map" 
+        src="@Model.Value("textForGoogleMaps")" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container">
+      <h1 class="form-header">@Model.Value("formTitle")</h1>
+      <div class="form-top">
+        <input class="input-info" placeholder="@Model.Value("firstInputPlaceholder")" />
+        <input class="input-info" placeholder="@Model.Value("secondInputPlaceholder")" />
+      </div>
+      <div>
+        <textarea class="textarea" placeholder="@Model.Value("textAreaInputPlaceholder")"></textarea>
+      </div>
+      <button class="btn-form"> @Model.Value("buttonText")</button>
+    </div>
